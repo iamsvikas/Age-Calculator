@@ -57,7 +57,7 @@ function displayResult(bDate,bMonth,bYear){
 }
 
 function leapChecker(year){
-    if(year % 4 == 0 || (year % 100 == 0 && year % 400 == 0)){
+    if(year % 4 == 0 && year % 100 == 0 && year % 400 == 0){
         months[1] = 29;
     }
     else{
